@@ -83,7 +83,7 @@ class Contact extends Component {
 						   {name} <br/> 
                      {city}, {state} {zip}<br />
 						   <span>{phone}</span>
-                     <ul>  If the submit form isn't working, then email me at {email}. </ul> 
+                     <br/>If the submit form isn't working, then email me at {email}. 
 						  
 					   </p>
 				   </div>
