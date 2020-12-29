@@ -9,6 +9,7 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
+      var email = this.props.data.email; 
       
       var message = this.props.data.contactmessage;
     }
@@ -80,8 +81,10 @@ class Contact extends Component {
 					   <h4>Address and Phone</h4>
 					   <p className="address">
 						   {name} <br/> 
-						   {city}, {state} {zip}<br />
+                     {city}, {state} {zip}<br />
 						   <span>{phone}</span>
+                     <ul>  If the submit form isn't working, then email me at {email}. </ul> 
+						  
 					   </p>
 				   </div>
 
