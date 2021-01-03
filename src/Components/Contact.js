@@ -16,6 +16,8 @@ class Contact extends Component {
 
       window.location.reload(false);
    }
+
+  
   render() {
 
    if(this.props.data){
