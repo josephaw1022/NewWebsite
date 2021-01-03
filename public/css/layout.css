@@ -857,7 +857,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #0762f9;
+	background-color: rgb(40, 73, 119);
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -876,7 +876,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #0762f9;
+	color: rgb(40, 73, 119);
 	font-size: 13px;
 }
 #message-warning, #message-success {

@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
 
 class Contact extends Component {
-   constructor(props) {
-      super(props);
-      this.state = {
-        name: '',
-        email: '',
-        subject:'', 
-        message: ''
-      }
-    }
+   
+
+  sendEmail(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_lguiqjf', 'template_ejrcvje', e.target, 'user_cq3P5DzVFcTG7sAcTuDpV')
+         .then((result) => {
+            console.log(result.text);
+         }, (error) => {
+            console.log(error.text);
+         });
+
+      window.location.reload(false);
+   }
   render() {
 
    if(this.props.data){
@@ -21,6 +27,7 @@ class Contact extends Component {
       var email = this.props.data.email; 
       var message = this.props.data.contactmessage;
    } 
+   
 
     return (
       <section id="contact">
@@ -44,35 +51,35 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="POST" onSubmit={this.handleSubmit.bind(this)} id="contactForm" name="contactForm">
+               <form action=""  id="contactForm" name="contactForm" onSubmit={this.sendEmail}>
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
+						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName"  />
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail"/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" value={this.state.subject} onChange={this.onSubjectChange.bind(this)}/>
+						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" />
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.message} onChange={this.onMessageChange.bind(this)} ></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"   ></textarea>
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
+						   <label htmlFor="contactName"><span></span></label>
+						   <input type="submit" value="Send" className="button"/>
                   </div>
+
+                 
 					</fieldset>
 				   </form>
 
@@ -86,12 +93,12 @@ class Contact extends Component {
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Location, Phone, & direct email</h4>
 					   <p className="address">
 						   {name} <br/> 
                      {city}, {state} {zip}<br />
 						   <span>{phone}</span>
-                     <br/>If the submit form isn't working, then email me at {email}. 
+                     <br/>{email}. 
 						  
 					   </p>
 				   </div>
@@ -104,24 +111,6 @@ class Contact extends Component {
   }
 
 
-  onNameChange(event) {
-   this.setState({name: event.target.value})
- }
-
- onEmailChange(event) {
-   this.setState({email: event.target.value})
- }
-
- onMessageChange(event) {
-   this.setState({message: event.target.value})
- }
-
-onSubjectChange(event) {
-   this.setState({subject: event.target.value})
- }
-
- handleSubmit(event) {
- }
 }
 
 
