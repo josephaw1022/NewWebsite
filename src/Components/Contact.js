@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+        name: '',
+        email: '',
+        subject:'', 
+        message: ''
+      }
+    }
   render() {
 
-    if(this.props.data){
+   if(this.props.data){
       var name = this.props.data.name;
       var city = this.props.data.address.city;
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email; 
-      
       var message = this.props.data.contactmessage;
-    }
+   } 
 
     return (
       <section id="contact">
@@ -36,27 +44,27 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="" method="POST" onSubmit={this.handleSubmit.bind(this)} id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" value={this.state.subject} onChange={this.onSubjectChange.bind(this)}/>
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.message} onChange={this.onMessageChange.bind(this)} ></textarea>
                   </div>
 
                   <div>
@@ -94,6 +102,28 @@ class Contact extends Component {
    </section>
     );
   }
+
+
+  onNameChange(event) {
+   this.setState({name: event.target.value})
+ }
+
+ onEmailChange(event) {
+   this.setState({email: event.target.value})
+ }
+
+ onMessageChange(event) {
+   this.setState({message: event.target.value})
+ }
+
+onSubjectChange(event) {
+   this.setState({subject: event.target.value})
+ }
+
+ handleSubmit(event) {
+ }
 }
+
+
 
 export default Contact;

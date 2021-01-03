@@ -14,7 +14,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-      <ParticlesBg type="circle" bg={true} />
+      <ParticlesBg type="polygon" bg={true} />
       <nav id="nav-wrap">
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
@@ -29,7 +29,6 @@ class Header extends Component {
       </nav>
 
       <div className="row banner">
-
          <div className="banner-text">
             <h1 className="responsive-headline">{name}</h1>
             <h3>{description}.</h3>
