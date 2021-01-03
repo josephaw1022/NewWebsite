@@ -2,6 +2,44 @@ import React, { Component } from 'react';
 import ParticlesBg  from "particles-bg";
 
 class Header extends Component {
+   getRandomBackground(){
+      var RandomNumber = Math.floor(Math.random() * 8)+1 ; 
+      var background = "" ; 
+      if (RandomNumber===1){
+         background = "color"
+         return background
+      }
+      else if (RandomNumber===2){
+         background = "lines"
+         return background
+      }
+      else if (RandomNumber===3){
+         background = "lines"
+         return background
+      }
+      else if (RandomNumber===4){
+         background = "thick"
+         return background
+      }
+      else if (RandomNumber===5){
+         background = "fountain"
+         return background
+      }
+      else if (RandomNumber===6){
+         background = "polygon"
+         return background
+      }
+      else if (RandomNumber===7){
+         background = "square"
+         return background
+      }
+      else if (RandomNumber===8){
+         background = "fountain"
+         return background
+      }
+
+
+   }
   render() {
 
     if(this.props.data){
@@ -14,7 +52,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-      <ParticlesBg type="polygon" bg={true} />
+      <ParticlesBg type={this.getRandomBackground()} bg={true} />
       <nav id="nav-wrap">
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
