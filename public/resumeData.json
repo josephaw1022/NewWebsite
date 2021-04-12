@@ -64,9 +64,9 @@
       },
       {
         "company":"Personal Project",
-        "title":"Physician Website Template ",
+        "title":"Therapist Website Template ",
         "years":"November 2020 - Present",
-        "description":"Designing a React Js based website designed for medical doctors to use for their own web app"
+        "description":"Designing a React based website designed for therapists to use for their own web app"
       }
     ],
     "skills":[
@@ -75,28 +75,28 @@
         "level":"95%"
       },
       {
-        "name":"Basic HTML, CSS, & JS",
-        "level":"90%"
+        "name":"React Frameworks",
+        "level":"80%"
       },
       {
-        "name":"Flask Framework",
+        "name":"State Management",
         "level":"75%"
       },
       {
-        "name":"React Library",
-        "level":"60%"
+        "name":"Django and Rest-Framework",
+        "level":"80%"
       },
       {
-        "name":"Git & Github",
-        "level":"50%"
+        "name":"Restful APIs",
+        "level":"75%"
       }, 
       {
-        "name":"Netlify & Fauna DB",
-        "level":"40%"
+        "name":"Git and Github",
+        "level":"70%"
       },
       {
-        "name":"Django Framework",
-        "level":"30%"
+        "name":"Web Hosting Services",
+        "level":"50%"
       }
       
     ]
