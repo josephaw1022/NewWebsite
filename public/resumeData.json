@@ -1,137 +1,135 @@
 {
   "main": {
-    "name":"Joseph Whiteaker",
-    "description":"This is my personal and professional resume website. This was made using a premade react template. Currently making my own personal projects from scratch using react and posting it on Github",
-    "image":"profilepic.jpg",
-    "bio":"Hello! My name is Joseph Whiteaker. I am a sophomore student athlete at Presbyterian College. This is my personal website for my resume!",
-    "contactmessage":"If you would like to contact me for anything ( whether that be for employment, a website, or just a question ), then just shoot me an email!" ,
+    "name": "Joseph Whiteaker",
+    "description": "This is my personal and professional resume website. Currently a new version of a portfolio site is being made using Angular. However, this site does contain up to date professional information and my current resume.",
+    "image": "profilepic.jpg",
+    "bio": "Hello! My name is Joseph Whiteaker. I am a sophomore student athlete at Presbyterian College. This is my personal website for my resume!",
+    "contactmessage": "If you would like to contact me for anything ( whether that be for employment, a website, or just a question ), then just shoot me an email!",
     "email": "josephsims1@gmail.com",
     "phone": "843-476-2895",
-    "github":"http://github.com/josephaw1022",
-    "project":"https://albrown-site.netlify.app/",
-    "address":{
-      "city":"Bluffton",
-      "state":"South Carolina",
+    "github": "http://github.com/josephaw1022",
+    "project": "https://albrown-site.netlify.app/",
+    "address": {
+      "city": "Bluffton",
+      "state": "South Carolina",
       "zip": "29910"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"dont use",
-    "social":[
+    "resumedownload": "dont use",
+    "social": [
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
+        "name": "facebook",
+        "url": "https://github.com/nordicgiant2/react-nice-resume",
+        "className": "fa fa-facebook"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
+        "name": "twitter",
+        "url": "http://twitter.com",
+        "className": "fa fa-twitter"
       },
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
+        "name": "instagram",
+        "url": "http://instagram.com/tbaker_x",
+        "className": "fa fa-instagram"
       },
       {
-        "name":"github",
-        "url":"http://github.com/josephaw1022",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "http://github.com/josephaw1022",
+        "className": "fa fa-github"
       }
     ]
   },
-  "resume":{
-    "skillmessage":"These are my relevant skills ",
-    "education":[
+  "resume": {
+    "skillmessage": "These are my relevant skills ",
+    "education": [
       {
-        "school":"Presbyterian College",
-        "degree":"BS Computer Science BS Applied Mathematics",
-        "graduated":"May 2023",
-        "description":"Double major in math and computer science. D1 FCS Football player for Presbyterian College. "
-      }
-      
-    ],
-    "work":[
-      {
-        "company":"School - Web Design Project",
-        "title":"2020 Election ",
-        "years":"August 2020 - December 2020",
-        "description":" Basic static page website with basic HTML, CSS, JS, & PHP. This website was designed to be a one stop shop for all 2020 election information in South Carolina in a simple and easy to understand format. "
-      },
-      {
-        "company":"Personal Project",
-        "title":"Therapist Website Template ",
-        "years":"November 2020 - Present",
-        "description":"Designing a React based website designed for therapists to use for their own web app"
+        "school": "University of South Carolina",
+        "degree": "BS Mathematics",
+        "graduated": "May 2023",
+        "description": "Majoring in math and in computer science as well. Former D1 FCS Football player for Presbyterian College. "
       }
     ],
-    "skills":[
+    "work": [
       {
-        "name":"Python",
-        "level":"95%"
+        "company": "School - Web Design Project",
+        "title": "2020 Election ",
+        "years": "August 2020 - December 2020",
+        "description": " Basic static page website with basic HTML, CSS, JS, & PHP. This website was designed to be a one stop shop for all 2020 election information in South Carolina in a simple and easy to understand format. "
       },
       {
-        "name":"React Frameworks",
-        "level":"80%"
-      },
-      {
-        "name":"State Management",
-        "level":"75%"
-      },
-      {
-        "name":"Django and Rest-Framework",
-        "level":"80%"
-      },
-      {
-        "name":"Restful APIs",
-        "level":"75%"
-      }, 
-      {
-        "name":"Git and Github",
-        "level":"70%"
-      },
-      {
-        "name":"Web Hosting Services",
-        "level":"50%"
+        "company": "Freelancing Work - Site for Client",
+        "title": "Therapist Website Template ",
+        "years": "September 2020 - December 2020",
+        "description": "Designing a React based website designed for therapists to use for their own web app"
       }
-      
+    ],
+    "skills": [
+      {
+        "name": "React, Vue, & Angular ",
+        "level": "95%"
+      },
+      {
+        "name": "Djagno and Laravel",
+        "level": "88%"
+      },
+      {
+        "name": "Frontend State Management",
+        "level": "85%"
+      },
+      {
+        "name": "API and Databases",
+        "level": "80%"
+      },
+      {
+        "name": "Git and Github",
+        "level": "75%"
+      },
+      {
+        "name": "AWS, Netlify, etc.. ",
+        "level": "70%"
+      },
+      {
+        "name": "Testing Applications",
+        "level": "45%"
+      }
     ]
   },
-  "portfolio":{
+  "portfolio": {
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "canadian-wanderlust.jpg",
+        "url": "https://www.canadianwanderlust.com"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "fury-fighting-gear.jpg",
+        "url": "http://www.timbakerdev.com"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "original-thai-food.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "resume-website.jpg",
+        "url": "http://www.timbakerdev.com"
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title": "Smirkspace",
+        "category": "(MVP Only) A React and Meteor based chat University project.",
+        "image": "smirkspace.jpg",
+        "url": "http://www.smirkspace.com"
       }
     ]
   }
