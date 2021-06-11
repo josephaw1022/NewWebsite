@@ -8,7 +8,7 @@
     "email": "josephsims1@gmail.com",
     "phone": "843-476-2895",
     "github": "http://github.com/josephaw1022",
-    "project": "https://albrown-site.netlify.app/",
+    "project": "https://joe-whiteaker-linktree.herokuapp.com/",
     "address": {
       "city": "Bluffton",
       "state": "South Carolina",
@@ -65,7 +65,7 @@
         "company": "Freelancing Work - Site for Client",
         "title": "Therapist Website Template ",
         "years": "September 2020 - December 2020",
-        "description": "Designing a React based website designed for therapists to use for their own web app"
+        "description": "Designing a React based website designed for therapists to use for their own web app. https://aplus25.com"
       }
     ],
     "skills": [
@@ -92,10 +92,6 @@
       {
         "name": "AWS, Netlify, etc.. ",
         "level": "70%"
-      },
-      {
-        "name": "Testing Applications",
-        "level": "45%"
       }
     ]
   },
